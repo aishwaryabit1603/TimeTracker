@@ -17,8 +17,8 @@ chrome.alarms.onAlarm.addListener((alarm) => {
                 console.error("Notification error:", chrome.runtime.lastError.message);
             } else {
                 console.log("Notification created:", notificationId);
-                notificationShown = true; // Mark notification as shown
             }
+            notificationShown = true; // Mark notification as shown
         });
     }
 });
